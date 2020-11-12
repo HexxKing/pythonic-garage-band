@@ -23,5 +23,6 @@ class Guitarist(Musician):
 class Bassist:
     pass
 
-class Drummer:
-    pass
+class Drummer(Musician):
+    def __str__(self):
+      return f"My name is {self.name} and I play drums"
