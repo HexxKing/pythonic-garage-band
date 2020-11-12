@@ -46,7 +46,7 @@ def test_drummer_str():
     assert actual == expected
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_drummer_repr():
     sheila = Drummer("Sheila E.")
     actual = repr(sheila)
