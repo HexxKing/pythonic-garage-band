@@ -20,8 +20,9 @@ class Guitarist(Musician):
     def __repr__(self):
       return f"Guitarist instance. Name = {self.name}"
 
-class Bassist:
-    pass
+class Bassist(Musician):
+    def __str__(self):
+      return f"My name is {self.name} and I play bass"
 
 class Drummer(Musician):
     def __str__(self):

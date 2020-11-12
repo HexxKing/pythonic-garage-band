@@ -54,7 +54,7 @@ def test_drummer_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_bassist_str():
     meshell = Bassist("Meshell Ndegeocello")
     actual = str(meshell)
