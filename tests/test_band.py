@@ -79,7 +79,7 @@ def test_guitarist():
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
