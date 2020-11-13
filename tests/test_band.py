@@ -130,7 +130,7 @@ def test_band_members(one_band):
     assert one_band.members[2].name == "Dave Grohl"
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_play_solos_for_whole_band(one_band):
     solos = one_band.play_solos()
     assert len(solos) == 3
