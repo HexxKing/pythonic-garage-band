@@ -9,22 +9,33 @@ class Band:
     def __repr__(self):
         return f"Band instance. name={self.name}, members={self.members}"
 
+    def play_solos(self, members):
+      solos = []
+      for member in self.members:
+          solos.apped(member.play_solo)
+      return solos
+
+    @classmethod
+    def to_list(cls):
+      return cls.list 
+
 
 class Musician():
-    def __init__(self, instrument, name):
+    def __init__(self, name, instrument, solo):
         self.name = name
         self.instrument = instrument
+        self.solo = solo
 
     def get_instrument(self):
         return self.instrument
 
-    # def get_instrument(self):
-    #   return f"{self.instrument}"
+    def play_solo(self):
+        return self.solo
 
 
 class Guitarist(Musician):
-    def __init__(self, name):
-        super().__init__("guitar", name) 
+    def __init__(self, name,):
+        super().__init__(name, "guitar", "face melting guitar solo") 
 
     def __str__(self):
       return f"My name is {self.name} and I play guitar"
@@ -35,7 +46,7 @@ class Guitarist(Musician):
 
 class Bassist(Musician):
     def __init__(self, name):
-        super().__init__("bass", name) 
+        super().__init__(name, "bass", "bom bom buh bom") 
 
     def __str__(self):
       return f"My name is {self.name} and I play bass"
@@ -46,7 +57,7 @@ class Bassist(Musician):
 
 class Drummer(Musician):
     def __init__(self, name):
-        super().__init__("drums", name) 
+        super().__init__(name, "drums", "rattle boom crash") 
 
     def __str__(self):
       return f"My name is {self.name} and I play drums"
