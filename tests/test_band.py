@@ -93,7 +93,7 @@ def test_drummer():
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):
