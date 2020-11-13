@@ -72,7 +72,7 @@ def test_bassist_repr():
 
 
 
-@pytest.mark.skip("pending")
+# @pytest.mark.skip("pending")
 def test_guitarist():
     jimi = Guitarist("Jimi Hendrix")
     assert jimi.name == "Jimi Hendrix"
