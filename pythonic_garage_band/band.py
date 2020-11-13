@@ -1,5 +1,7 @@
 class Band:
-    def __init__(self, name, members=None):
+    list = []
+
+    def __init__(self, name, members=0):
         self.name = name
         self.members = members
 
@@ -9,15 +11,15 @@ class Band:
     def __repr__(self):
         return f"Band instance. name={self.name}, members={self.members}"
 
-    def play_solos(self, members):
+    def play_solos(self, members=None):
       solos = []
       for member in self.members:
-          solos.apped(member.play_solo)
-      return solos
+          solos.append(member.play_solos)
+      return solos 
 
     @classmethod
     def to_list(cls):
-      return cls.list 
+      return cls.list
 
 
 class Musician():
@@ -34,7 +36,7 @@ class Musician():
 
 
 class Guitarist(Musician):
-    def __init__(self, name,):
+    def __init__(self, name):
         super().__init__(name, "guitar", "face melting guitar solo") 
 
     def __str__(self):
